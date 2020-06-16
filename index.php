@@ -46,16 +46,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>FAQ – Privacy &amp; Terms – Google</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <?php
-            foreach($faqs as $faq) {
-                echo '<h2>' . $faq['question'] . '</h2>';
-                foreach($faq['answer'] as $paragraph) {
-                    echo '<p>' . $paragraph . '</p>';
-                }
-            }
-        ?>
+        <header>
+            <h1>
+                Google Privacy &amp Terms
+            </h1>
+        </header>
+        <section class="container">
+            <div class="faqs">
+                <?php
+                    foreach($faqs as $faq) {
+                        echo '<h2>' . $faq['question'] . '</h2>';
+                        foreach($faq['answer'] as $paragraph) {
+                            echo '<p>' . $paragraph . '</p>';
+                        }
+                    }
+                ?>
+            </div>
+        </section>
     </body>
 </html>
